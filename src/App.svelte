@@ -1,9 +1,29 @@
 <script lang="ts">
   import svelteLogo from "./assets/svelte.svg";
   import Counter from "./lib/Counter.svelte";
+  import {
+    Header,
+    HeaderNav,
+    HeaderNavItem,
+    SideNav,
+    SideNavItems,
+    SideNavLink,
+    Content,
+  } from "carbon-components-svelte";
+
+  let isSideNavOpen = false;
 </script>
 
-<main>
+<Header company="Izzat Razab" platformName="Portfolio" bind:isSideNavOpen />
+
+<SideNav bind:isOpen={isSideNavOpen}>
+  <SideNavItems>
+    <SideNavLink text="Link 1" />
+    <SideNavLink text="Link 2" />
+    <SideNavLink text="Link 3" />
+  </SideNavItems>
+</SideNav>
+<Content>
   <h2>Hi I'm Izzat, This will be my portfolio website soon.</h2>
   <h2>Built by using Vite and Svelte</h2>
   <div>
@@ -28,7 +48,7 @@
   </p>
 
   <p class="read-the-docs">Click on the Vite and Svelte logos to learn more</p>
-</main>
+</Content>
 
 <style>
   .logo {

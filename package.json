@@ -7,12 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy":"npx gh-pages -d dist",
+    "deploy": "npx gh-pages -d dist",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.0",
     "@tsconfig/svelte": "^3.0.0",
+    "carbon-components-svelte": "^0.72.3",
     "gh-pages": "^5.0.0",
     "svelte": "^3.54.0",
     "svelte-check": "^2.10.0",
