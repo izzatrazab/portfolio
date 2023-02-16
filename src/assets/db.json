@@ -3,13 +3,33 @@
         "email": "izzatrazab@gmail.com",
         "github": "izzatrazab"
     },
-
-    "project":[{
-
-    }],
-
-    "personalProject": [{
-        "name" : "Typing Test",
-        "description" : "I built this in "
-    }]
+    "project": [
+        {}
+    ],
+    "personalProject": [
+        {
+            "name": "Typing Test",
+            "description": "I built this in "
+        }
+    ],
+    "devToolLogos": [
+        {
+            "href": "https://svelte.dev",
+            "imgName": "svelte.svg",
+            "class":"logo svelte",
+            "alt" : "Svelte Logo"
+        },
+        {
+            "href": "https://vitejs.dev",
+            "imgName": "vite.svg",
+            "class":"logo vite",
+            "alt" : "Vite Logo"
+        },
+        {
+            "href": "https://carbon-components-svelte.onrender.com/",
+            "imgName": "Carbon Design System.png",
+            "class":"logo carbon",
+            "alt" : "Carbon Logo"
+        }
+    ]
 }
