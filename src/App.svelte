@@ -18,7 +18,6 @@
   let isSideNavOpen = false;
 
   onMount(async () => {
-    // const contact = await fetch("./assets/db.json");
     console.log(db.contact);
   });
 </script>
