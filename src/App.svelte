@@ -1,10 +1,14 @@
 <script lang="ts">
   import svelteLogo from "./assets/svelte.svg";
+  import db from "./assets/db.json";
   import Counter from "./lib/Counter.svelte";
+  import { onMount } from "svelte";
+  import LogoGithub from "carbon-icons-svelte/lib/LogoGithub.svelte";
+  import Email from "carbon-icons-svelte/lib/Email.svelte";
   import {
     Header,
-    HeaderNav,
-    HeaderNavItem,
+    HeaderActionLink,
+    HeaderUtilities,
     SideNav,
     SideNavItems,
     SideNavLink,
@@ -12,17 +16,30 @@
   } from "carbon-components-svelte";
 
   let isSideNavOpen = false;
+
+  onMount(async () => {
+    // const contact = await fetch("./assets/db.json");
+    console.log(db.contact);
+  });
 </script>
 
-<Header company="Izzat Razab" platformName="Portfolio" bind:isSideNavOpen />
-
-<SideNav bind:isOpen={isSideNavOpen}>
+<Header company="Izzat Razab" platformName="Portfolio" bind:isSideNavOpen>
+  <HeaderUtilities>
+    <HeaderActionLink
+      href="https://github.com/{db.contact.github}"
+      icon={LogoGithub}
+      target="_blank"
+    />
+    <HeaderActionLink href="mailto: {db.contact.email}" icon={Email} />
+  </HeaderUtilities>
+</Header>
+<!-- <SideNav bind:isOpen={isSideNavOpen}>
   <SideNavItems>
     <SideNavLink text="Link 1" />
     <SideNavLink text="Link 2" />
     <SideNavLink text="Link 3" />
   </SideNavItems>
-</SideNav>
+</SideNav> -->
 <Content>
   <h2>Hi I'm Izzat, This will be my portfolio website soon.</h2>
   <h2>Built by using Vite and Svelte</h2>

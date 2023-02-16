@@ -1,0 +1,15 @@
+{
+    "contact": {
+        "email": "izzatrazab@gmail.com",
+        "github": "izzatrazab"
+    },
+
+    "project":[{
+
+    }],
+
+    "personalProject": [{
+        "name" : "Typing Test",
+        "description" : "I built this in "
+    }]
+}
