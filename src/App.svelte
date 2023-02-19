@@ -1,6 +1,5 @@
 <script lang="ts">
   import db from "./assets/db.json";
-  import Counter from "./lib/Counter.svelte";
   import { onMount } from "svelte";
   import Email from "carbon-icons-svelte/lib/Email.svelte";
   import {
@@ -13,15 +12,13 @@
     Content,
   } from "carbon-components-svelte";
 
+  import Intro from "./routes/sections/Intro.svelte";
+  import Skills from "./routes/sections/Skilled.svelte";
   import LogoGithub from "carbon-icons-svelte/lib/LogoGithub.svelte";
-  import svelteLogo from "./assets/svelte.svg";
-  import viteLogo from "./assets/vite.svg";
-  import carbonDesignSystemLogo from "./assets/Carbon Design System.png";
+  import LessSkilled from "./routes/sections/LessSkilled.svelte";
   let isSideNavOpen = false;
 
-  onMount(async () => {
-    console.log(db.contact);
-  });
+  onMount(async () => {});
 
   function scrollIntoView({ target }) {
     const el = document.querySelector(target.getAttribute("href"));
@@ -36,7 +33,7 @@
   company="Izzat Razab"
   platformName="Portfolio"
   bind:isSideNavOpen
-  href="#section-1"
+  href="#intro"
   on:click={scrollIntoView}
 >
   <HeaderUtilities>
@@ -59,72 +56,24 @@
   </SideNavItems>
 </SideNav> -->
 <Content style="padding-top:0px; margin-top:0px">
-  <section id="section-1">
-    <p>
-      This is my portfolio/resume built using
-      <a
-        href="https://svelte.dev"
-        target="_blank"
-        rel="noreferrer"
-        style="color:#FF6432"
-      >
-        Svelte
-      </a>,
-      <a
-        href="https://vitejs.dev"
-        target="_blank"
-        rel="noreferrer"
-        style="color:cornflowerblue"
-      >
-        Vite
-      </a>,
-      <a
-        href="https://carbon-components-svelte.onrender.com"
-        target="_blank"
-        rel="noreferrer"
-        style="color:lightsteelblue"
-      >
-        Carbon Svelte
-      </a>
-    </p>
-    <div>
-      {#each db.devToolLogos as devToolLogo}
-        <a href={devToolLogo.href} target="_blank" rel="noreferrer">
-          <img
-            src="/portfolio/src/assets/{devToolLogo.imgName}"
-            class={devToolLogo.class}
-            alt={devToolLogo.alt}
-          />
-        </a>
-      {/each}
-    </div>
-    <h2>Hi I'm Izzat, This will be my portfolio website soon.</h2>
-    <h2>Built by using Vite and Svelte</h2>
+  <section id="intro" class="contain">
+    <Intro />
   </section>
-  <section id="section-2">
-    <h1>Section 2</h1>
-    <h1>Section 2</h1>
-    <h1>Section 2</h1>
-    <h1>Section 2</h1>
+  <hr />
+  <section id="section-2" class="contain">
+    <Skills />
   </section>
-  <section id="section-3">Section 3</section>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a
-      href="https://github.com/sveltejs/kit#readme"
-      target="_blank"
-      rel="noreferrer">SvelteKit</a
-    >, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">Click on the Vite and Svelte logos to learn more</p>
+  <hr />
+  <section id="section-3" class="contain">
+    <LessSkilled />
+  </section>
 </Content>
 
 <style>
+  .contain {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
   .logo {
     height: 6em;
     padding: 1.2em;
@@ -142,7 +91,7 @@
   .read-the-docs {
     color: #888;
   }
-  #section-1 {
+  #intro {
     padding-top: 5rem;
   }
 </style>
