@@ -34,7 +34,7 @@
             rel="noreferrer"
             style="color:lightsteelblue; text-shadow: 0 0 1px #99CCFF "
           >
-            Carbon Svelte
+            Carbon Svelte.
           </a>
         </p>
       </div>

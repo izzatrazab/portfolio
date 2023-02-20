@@ -8,8 +8,43 @@ import LogoReact from "./react-logo.svg"
 import LogoJest from "./jest-logo.svg"
 import LogoSpringBoot from "./spring-boot-logo.svg"
 import LogoFirebase from "./firebase-logo.svg"
-import ModalVue from "./../routes/sections/modals/vue-modal.svelte"
+
+import kakitangan1 from "./Intern/Kakitangan 01.jpg";
+import kakitangan2 from "./Intern/Kakitangan 02.jpg";
+import kakitangan3 from "./Intern/Kakitangan 03.jpg";
+
+
+export const tools = {
+    php: {
+        name: "PHP"
+    },
+    html: {
+        name: "HTML"
+    },
+    JavaScript: {
+        name: "JavaScript"
+    },
+    jQuery: {
+        name: "jQuery"
+    },
+    chartJs: {
+        name: "Chart.js"
+    },
+    bootstrap: {
+        name: "Bootstrap"
+    }
+
+}
+
 export let db = {
+    biodata: {
+        name: "Muhammad Izzat bin Abd Razab",
+        age: 23,
+        phone: "01113048308",
+        email: "izzatrazab@gmail.com",
+        github: "izzatrazab",
+        education: "Bachelor of Computer Science (Software Engineering)  University of Malaya (cgpa: 3.72). I already finished all semesters and expected to officially graduate early next year.",
+    },
     confidentTools: [{
         name: "Vue 2",
         logo: LogoVue,
@@ -68,5 +103,12 @@ export let db = {
             logo: LogoFirebase,
             description: "",
         }
-    ]
+    ],
+    kakitangan: {
+        img: [kakitangan1, kakitangan2, kakitangan3],
+        tools:[ tools.html,tools.php,tools.JavaScript, tools.jQuery, tools.chartJs]
+    },
+    hearseBooking:{
+        
+    }
 }
