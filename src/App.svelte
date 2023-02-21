@@ -54,6 +54,7 @@
     >
     <Modal bind:open={isBioModalOpen} passiveModal modalHeading="BIODATA">
       <Grid>
+        <hr />
         <Row>
           <Column sm={1} md={2}>
             <p id="tableHead">Name:</p>
@@ -98,7 +99,6 @@
             <p id="tableContent">{db.biodata.education}</p>
           </Column>
         </Row>
-        <hr />
       </Grid>
     </Modal>
 

@@ -84,3 +84,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.bx--modal-container {
+  position: static !important;
+  max-width: 80% !important;
+  height: min-content !important;
+  max-height: 60% !important;
+  text-align: start;
+  margin: 0;
+  background: rgb(17,67,87);
+  background: -moz-linear-gradient(145deg, rgba(17,67,87,1) 0%, rgba(41,76,93,1) 18%, rgba(67,85,100,1) 36%, rgba(91,94,106,1) 54%, rgba(106,99,110,1) 67%, rgba(117,103,113,1) 77%, rgba(144,113,120,1) 87%, rgba(193,130,133,1) 94%, rgba(242,148,146,1) 100%);
+  background: -webkit-linear-gradient(145deg, rgba(17,67,87,1) 0%, rgba(41,76,93,1) 18%, rgba(67,85,100,1) 36%, rgba(91,94,106,1) 54%, rgba(106,99,110,1) 67%, rgba(117,103,113,1) 77%, rgba(144,113,120,1) 87%, rgba(193,130,133,1) 94%, rgba(242,148,146,1) 100%);
+  background: linear-gradient(145deg, rgba(17,67,87,1) 0%, rgba(41,76,93,1) 18%, rgba(67,85,100,1) 36%, rgba(91,94,106,1) 54%, rgba(106,99,110,1) 67%, rgba(117,103,113,1) 77%, rgba(144,113,120,1) 87%, rgba(193,130,133,1) 94%, rgba(242,148,146,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#114357",endColorstr="#f29492",GradientType=1); 
+}
