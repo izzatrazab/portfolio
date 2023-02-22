@@ -32,7 +32,7 @@
             some charts.
           </p>
         </section>
-        {#each db.kakitangan.tools as tool, i}
+        {#each db.kakitangan.tools as tool}
           <Tag>{tool.name}</Tag>
         {/each}
       </article>
@@ -78,7 +78,7 @@
     text-align: center;
   }
   #description {
-    height: 100px;
+    max-height: 100px;
     overflow: scroll;
   }
 </style>

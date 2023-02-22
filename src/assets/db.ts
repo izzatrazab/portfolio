@@ -14,6 +14,8 @@ import kakitangan2 from "./Intern/Kakitangan 02.jpg";
 import kakitangan3 from "./Intern/Kakitangan 03.jpg";
 import hearseBooking1 from "./Intern/hearseBooking01.svg";
 
+import jomTaip from "./personal/JomTaip.png"
+
 export const tools = {
     php: {name: "PHP"},
     html: {name: "HTML"},
@@ -125,4 +127,14 @@ export let db = {
             tools.php
         ],
     },
+    personalProject: {
+        jomTaip:{
+            name:"JomTaip",
+            img:jomTaip,
+            description:"JomTaip is a simple typing test I created using react right after my internship.",
+            tools:[
+                tools.react
+            ]
+        },
+    }
 };

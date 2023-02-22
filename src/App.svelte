@@ -23,6 +23,7 @@
   import LogoGithub from "carbon-icons-svelte/lib/LogoGithub.svelte";
   import LessSkilled from "./routes/sections/LessSkilled.svelte";
   import WorkExperience from "./routes/sections/WorkExperience.svelte";
+  import PersonalProject from "./routes/sections/PersonalProject.svelte";
   let isSideNavOpen = false;
   let isBioModalOpen = false;
   let headerActionisOpen = false;
@@ -132,6 +133,10 @@
   <section id="section-4" class="contain">
     <hr />
     <LessSkilled />
+  </section>
+  <section id="section-5" class="contain">
+    <hr />
+    <PersonalProject />
   </section>
 </Content>
 
