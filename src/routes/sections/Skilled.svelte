@@ -1,6 +1,6 @@
 <script>
   import { Grid, Row, Column, Modal } from "carbon-components-svelte";
-  import { db } from "../../assets/db";
+  import { experienceTools } from "../../assets/db";
   let isToolDescriptionOpen = false;
   let toolName = "";
   let toolDescriptionMsg = "";
@@ -17,16 +17,15 @@
 
 <h3>Skills</h3>
 <Grid>
-  <Row>
-    <Column>
+  <Row style="display:flex; justify-content: center; text-align: justify">
+    <Column sm={4} md={8} lg={8} xlg={8} max={8}>
       <p>
-        These are the framework/database that I'm confident with. As far afs I
-        remember, I used them the longest if compared to others.
+        {experienceTools.description}
       </p>
     </Column>
   </Row>
   <Row noGutter={true} style="display:flex; justify-content: center;">
-    {#each db.confidentTools as tool}
+    {#each experienceTools.tools as tool}
       <Column sm={2} md={2} lg={3} xlg={3} max={3}>
         <div class="card">
           <img
@@ -50,7 +49,9 @@
   size="xs"
   on:close={() => ((toolDescriptionMsg = ""), (toolName = ""))}
 >
-  {toolDescriptionMsg}
+  <p style="text-align:justify">
+    {toolDescriptionMsg}
+  </p>
 </Modal>
 
 <style>

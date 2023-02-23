@@ -12,10 +12,12 @@
     Grid,
     Row,
     Column,
-    SkipToContent,
     SideNav,
     SideNavItems,
     SideNavLink,
+    SkipToContent,
+    HeaderNav,
+    HeaderNavItem,
   } from "carbon-components-svelte";
 
   import Intro from "./routes/sections/Intro.svelte";
@@ -26,7 +28,6 @@
   import PersonalProject from "./routes/sections/PersonalProject.svelte";
   let isSideNavOpen = false;
   let isBioModalOpen = false;
-  let headerActionisOpen = false;
 
   onMount(async () => {});
 
@@ -45,7 +46,11 @@
   bind:isSideNavOpen
   href="#intro"
   on:click={scrollIntoView}
+  persistentHamburgerMenu={true}
 >
+  <svelte:fragment slot="skip-to-content">
+    <SkipToContent />
+  </svelte:fragment>
   <HeaderUtilities>
     <Button
       kind="ghost"
@@ -94,6 +99,15 @@
         <hr />
         <Row>
           <Column sm={1} md={2}>
+            <p id="tableHead">From:</p>
+          </Column>
+          <Column>
+            <p id="tableContent">{db.biodata.from}</p>
+          </Column>
+        </Row>
+        <hr />
+        <Row>
+          <Column sm={1} md={2}>
             <p id="tableHead">Education:</p>
           </Column>
           <Column>
@@ -111,13 +125,14 @@
     <HeaderActionLink href="mailto: {db.biodata.email}" icon={Email} />
   </HeaderUtilities>
 </Header>
-<!-- <SideNav bind:isOpen={isSideNavOpen}>
+<SideNav bind:isOpen={isSideNavOpen}>
   <SideNavItems>
-    <SideNavLink text="Link 1" />
-    <SideNavLink text="Link 2" />
-    <SideNavLink text="Link 3" />
+    <SideNavLink text="Skills" href="#section-2" />
+    <SideNavLink text="Work Experience" href="#section-3" />
+    <SideNavLink text="Less Experience" href="#section-4" />
+    <SideNavLink text="Personal Project" href="#section-5" />
   </SideNavItems>
-</SideNav> -->
+</SideNav>
 <Content style="padding-top:0px; margin-top:0px">
   <section id="intro" class="contain">
     <Intro />
