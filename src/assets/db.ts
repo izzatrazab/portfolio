@@ -150,7 +150,6 @@ export let lessExperienceTools = {
         tools.springBoot,
         tools.firebase,
         tools.angular,
-        tools.php
     ]
 }
 
@@ -161,6 +160,7 @@ export let experienceTools = {
         tools.vuetify,
         tools.css,
         tools.nodeJs,
-        tools.mySQL
+        tools.mySQL,
+        tools.php
     ]
 }
