@@ -10,6 +10,7 @@ import LogoSpringBoot from "./spring-boot-logo.svg"
 import LogoFirebase from "./firebase-logo.svg"
 import LogoAngular from "./logo/angular-logo.svg"
 import LogoPHP from "./logo/php-logo.svg"
+import LogoTensorflow from "./logo/tensorflow-logo.svg"
 
 import kakitangan1 from "./Intern/Kakitangan 01.jpg"
 import kakitangan2 from "./Intern/Kakitangan 02.jpg"
@@ -58,7 +59,7 @@ export const tools = {
     php: {
         name: "PHP",
         logo: LogoPHP,
-        description: "PHP is the first language that I used for backend, I used this during internship as well. Unfortunately, I did not use any structure or good practice using PHP. Now that I am more concern about structure and best practice. I will go back to learn proper PHP good practices or even learn php framework such as Laravel."
+        description: "PHP is the first language that I used for backend, I used this during internship as well. From time to time, I would help my internship supervisor with his hospital project that uses PHP. Unfortunately, I did not use any structure or good practice using PHP. Now that I am more concern about structure and best practice. I will go back to learn proper PHP good practices or even learn php framework such as Laravel."
     },
     react: {
         name: "React",
@@ -91,6 +92,11 @@ export const tools = {
         name: "Vuetify",
         logo: LogoVuetify,
         description: "Vuetify is one of the component framework for Vue, I used this along with Vue 2 for my final year project."
+    },
+    tensorflow:{
+        name: "Tensorflow",
+        logo: LogoTensorflow,
+        description: "I used tensorflow to build AI models. With it I managed to build AI flappy bird game using Javascript (soft computing subject) that trains on its own to achieve better score. I also manage to build models that can identify either grass or not grass using python for the controller of a grass cutter robot simulation in Webots (real-time system subject)."
     }
 };
 
@@ -141,7 +147,7 @@ export let db = {
 };
 
 export let lessExperienceTools = {
-    description: "These are the framework/database that I am less experience with. Nevertheless, I am still going to check them out again in the future to explore their potential. Click the icon to see the details.",
+    description: "These are the technologies that I have used (I'm still less experience with them) . Nevertheless, I am still going to check them out again in the future to explore their potential. Click the icon to see the details.",
     tools: [
         tools.react,
         tools.reactNative,
@@ -150,6 +156,7 @@ export let lessExperienceTools = {
         tools.springBoot,
         tools.firebase,
         tools.angular,
+        tools.tensorflow
     ]
 }
 

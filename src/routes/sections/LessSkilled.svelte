@@ -15,7 +15,7 @@
   };
 </script>
 
-<h3>Less Experience</h3>
+<h3>Technologies I have used</h3>
 <Grid>
   <Row style="display:flex; justify-content: center; text-align: justify">
     <Column sm={4} md={8} lg={8} xlg={8} max={8}>
