@@ -109,7 +109,7 @@ export let db = {
         github: "izzatrazab",
         from:"Kuala Terengganu - Malaysia",
         education:
-            "Bachelor of Computer Science (Software Engineering)  University of Malaya (cgpa: 3.72). I already finished all semesters and expected to officially graduate early next year.",
+            "Bachelor of Computer Science (Software Engineering)  University of Malaya (cgpa: 3.65). I already finished all semesters and expected to officially graduate early next year.",
     },
     kakitangan: {
         img: [kakitangan1, kakitangan2, kakitangan3],
