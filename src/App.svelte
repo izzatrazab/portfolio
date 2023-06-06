@@ -16,8 +16,6 @@
     SideNavItems,
     SideNavLink,
     SkipToContent,
-    HeaderNav,
-    HeaderNavItem,
   } from "carbon-components-svelte";
 
   import Intro from "./routes/sections/Intro.svelte";
@@ -28,8 +26,6 @@
   import PersonalProject from "./routes/sections/PersonalProject.svelte";
   let isSideNavOpen = false;
   let isBioModalOpen = false;
-
-  onMount(async () => {});
 
   function scrollIntoView({ target }) {
     const el = document.querySelector(target.getAttribute("href"));
