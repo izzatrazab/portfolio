@@ -151,7 +151,6 @@ export let lessExperienceTools = {
     tools: [
         tools.react,
         tools.reactNative,
-        tools.svelte,
         tools.jest,
         tools.springBoot,
         tools.firebase,
@@ -168,6 +167,7 @@ export let experienceTools = {
         tools.css,
         tools.nodeJs,
         tools.mySQL,
-        tools.php
+        tools.php,
+        tools.svelte,
     ]
 }
