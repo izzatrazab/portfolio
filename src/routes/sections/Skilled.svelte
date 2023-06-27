@@ -63,6 +63,7 @@
     padding-bottom: 0;
     position: relative;
   }
-  /* #toolDescription {
-  } */
+  .card > img:hover{
+		transform: scale(1.2);
+  }
 </style>

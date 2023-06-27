@@ -29,7 +29,7 @@
       <Column sm={2} md={2} lg={3} xlg={3} max={3}>
         <div class="card">
           <img
-            style="width:90%;"
+            style="width:90%;cursor: pointer;"
             src={tool.logo}
             alt={tool.name}
             on:click={() => openToolDescription(tool.description, tool.name)}
@@ -61,5 +61,9 @@
     align-items: center;
     aspect-ratio: 1;
     padding-bottom: 0;
+  }
+
+  .card > img:hover{
+		transform: scale(1.2);
   }
 </style>

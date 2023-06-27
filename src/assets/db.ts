@@ -11,6 +11,7 @@ import LogoFirebase from "./firebase-logo.svg"
 import LogoAngular from "./logo/angular-logo.svg"
 import LogoPHP from "./logo/php-logo.svg"
 import LogoTensorflow from "./logo/tensorflow-logo.svg"
+import logoLaravel from "./logo/laravel.svg"
 
 import kakitangan1 from "./Intern/Kakitangan 01.jpg"
 import kakitangan2 from "./Intern/Kakitangan 02.jpg"
@@ -46,6 +47,7 @@ export const tools = {
     },
     jQuery: { name: "jQuery" },
     JavaScript: { name: "JavaScript" },
+    laravel : {name: 'Laravel', logo: logoLaravel, description: "Just started learning, I am suprised how full featured laravel is. So I will explore more."},
     mySQL: {
         name: "MySQL",
         logo: LogoMysql,
@@ -151,11 +153,12 @@ export let lessExperienceTools = {
     tools: [
         tools.react,
         tools.reactNative,
+        tools.laravel,
         tools.jest,
         tools.springBoot,
         tools.firebase,
         tools.angular,
-        tools.tensorflow
+        tools.tensorflow,
     ]
 }
 
